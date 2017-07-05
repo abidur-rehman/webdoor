@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Webdoor.jnlp">
+  <information>
+    <title>Webdoor</title>
+    <vendor>abid.ur-rehman</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Webdoor.jar" size="397387" download="eager" />
+    <jar href="lib/antlr-2.7.7.jar" size="445288" download="eager" />
+    <jar href="lib/aopalliance-1.0.jar" size="4467" download="eager" />
+    <jar href="lib/asm-3.1.jar" size="43033" download="eager" />
+    <jar href="lib/cglib-2.2.jar" size="278682" download="eager" />
+    <jar href="lib/classmate-0.5.4.jar" size="57963" download="eager" />
+    <jar href="lib/commons-collections-3.2.1.jar" size="575389" download="eager" />
+    <jar href="lib/commons-logging-1.1.1.jar" size="60686" download="eager" />
+    <jar href="lib/dom4j-1.6.1.jar" size="313898" download="eager" />
+    <jar href="lib/hibernate-commons-annotations-4.0.1.Final.jar" size="81271" download="eager" />
+    <jar href="lib/hibernate-core-4.1.0.Final.jar" size="4317092" download="eager" />
+    <jar href="lib/hibernate-jpa-2.0-api-1.0.1.Final.jar" size="102661" download="eager" />
+    <jar href="lib/hsqldb.jar" size="1466945" download="eager" />
+    <jar href="lib/jandex-1.0.3.Final.jar" size="70928" download="eager" />
+    <jar href="lib/javafx-dialogs-0.0.1.jar" size="116201" download="eager" />
+    <jar href="lib/javassist-3.12.1.GA.jar" size="644148" download="eager" />
+    <jar href="lib/javax.inject-1.jar" size="2497" download="eager" />
+    <jar href="lib/jboss-logging-3.1.0.CR2.jar" size="60539" download="eager" />
+    <jar href="lib/jboss-transaction-api_1.1_spec-1.0.0.Final.jar" size="11209" download="eager" />
+    <jar href="lib/log4j-1.2.16.jar" size="481535" download="eager" />
+    <jar href="lib/rt.jar" size="63191979" download="eager" />
+    <jar href="lib/spring-aop-3.0.6.RELEASE.jar" size="321428" download="eager" />
+    <jar href="lib/spring-asm-3.0.6.RELEASE.jar" size="53082" download="eager" />
+    <jar href="lib/spring-beans-3.0.6.RELEASE.jar" size="556590" download="eager" />
+    <jar href="lib/spring-context-3.0.6.RELEASE.jar" size="670258" download="eager" />
+    <jar href="lib/spring-core-3.0.6.RELEASE.jar" size="382184" download="eager" />
+    <jar href="lib/spring-expression-3.0.6.RELEASE.jar" size="169752" download="eager" />
+    <jar href="lib/swing-layout-1.0.4.jar" size="117412" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Webdoor" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="pk.webdoor.fx.mvp.gui.WebdoorApp"  name="Webdoor" />
+  <update check="always"/>
+</jnlp>

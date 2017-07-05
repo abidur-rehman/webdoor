@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="root" maxHeight="-1.0" maxWidth="-1.0" minHeight="-1.0" minWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="pk.webdoor.fx.mvp.gui.presenters.CustomersPresenter">
+  <!--  
+    <children>
+        <AnchorPane id="anchorPane1" minHeight="0.0" minWidth="0.0" prefHeight="586.0" prefWidth="238.0">
+          <children>
+            <HBox id="HBox" alignment="CENTER" spacing="5.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+              <children>
+                <Label text="Search Name:" />
+                <TextField fx:id="filterField" HBox.hgrow="ALWAYS" />
+              </children>
+            </HBox>
+            <TableView id="tableView1" fx:id="table" prefHeight="628.0" prefWidth="251.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="46.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="Name" fx:id="colName" />
+                <TableColumn prefWidth="75.0" text="Fathername" fx:id="colFathername" />
+              </columns>
+            </TableView>
+          </children>
+        </AnchorPane>
+    </children>
+    
+    -->
+  <children>
+    <SplitPane dividerPositions="0.3522012578616352" styleClass="backgroundColor" focusTraversable="true" maxHeight="-1.0" maxWidth="-1.0" minHeight="-1.0" minWidth="-1.0" orientation="VERTICAL" prefHeight="-1.0" prefWidth="-1.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <items>
+        <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="53.0" prefWidth="275.0">
+          <children>
+            <HBox id="HBox" alignment="CENTER" prefHeight="53.0" prefWidth="275.0" spacing="15.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <children>
+                <Label prefWidth="49.0" text="Search:" />
+                <TextField fx:id="filterField" prefWidth="190.0" HBox.hgrow="ALWAYS" />
+              </children>
+              <padding>
+                <Insets left="15.0" right="15.0" />
+              </padding>
+            </HBox>
+          </children>
+        </AnchorPane>
+        <AnchorPane minHeight="-1.0" minWidth="-1.0" prefHeight="100.0" prefWidth="160.0">
+          <children>
+            <TableView id="tableView1" fx:id="table" prefHeight="96.0" prefWidth="158.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <columns>
+                <TableColumn maxWidth="89.0" minWidth="89.0" prefWidth="89.0" resizable="false" style="text-align:center" text="Customer ID" fx:id="colCkey" />
+                <TableColumn maxWidth="203.0" minWidth="190.0" prefWidth="203.0" resizable="false" text="Name" fx:id="colName" />
+              </columns>
+            </TableView>
+          </children>
+        </AnchorPane>
+      </items>
+    </SplitPane>
+  </children>
+</AnchorPane>

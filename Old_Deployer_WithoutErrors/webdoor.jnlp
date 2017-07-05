@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" codebase="file:/H:/NETBEANSWS/Webdoor_CurrentV/dist"
+    href="webdoor.jnlp">
+    <information>
+        <title>Dynamic Tree Demo</title>
+        <vendor>Dynamic Team</vendor>
+		<offline-allowed/>
+    </information>
+  <security>
+  	<all-permissions/>
+  </security>
+  <resources>
+    <jfx:javafx-runtime version="2.2+" href="http://javadl.sun.com/webapps/download/GetFile/javafx-latest/windows-i586/javafx2.jnlp"/>
+  </resources>  
+    <resources>
+        <!-- Application Resources -->
+        <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+        <jar href="Webdoor.jar" main="true" />
+    <jar href="lib/antlr-2.7.7.jar" size="446167" download="eager" />
+    <jar href="lib/aopalliance-1.0.jar" size="5345" download="eager" />
+    <jar href="lib/asm-3.1.jar" size="44409" download="eager" />
+    <jar href="lib/cglib-2.2.jar" size="283223" download="eager" />
+    <jar href="lib/classmate-0.5.4.jar" size="58840" download="eager" />
+    <jar href="lib/commons-collections-3.2.1.jar" size="583674" download="eager" />
+    <jar href="lib/commons-logging-1.1.1.jar" size="62094" download="eager" />
+    <jar href="lib/dom4j-1.6.1.jar" size="314776" download="eager" />
+    <jar href="lib/hibernate-commons-annotations-4.0.1.Final.jar" size="83237" download="eager" />
+    <jar href="lib/hibernate-core-4.1.0.Final.jar" size="4365668" download="eager" />
+    <jar href="lib/hibernate-jpa-2.0-api-1.0.1.Final.jar" size="106435" download="eager" />
+    <jar href="lib/hsqldb.jar" size="1467822" download="eager" />
+    <jar href="lib/jandex-1.0.3.Final.jar" size="72541" download="eager" />
+    <jar href="lib/javassist-3.12.1.GA.jar" size="650933" download="eager" />
+    <jar href="lib/javax.inject-1.jar" size="3486" download="eager" />
+    <jar href="lib/jboss-logging-3.1.0.CR2.jar" size="62187" download="eager" />
+    <jar href="lib/jboss-transaction-api_1.1_spec-1.0.0.Final.jar" size="12423" download="eager" />
+    <jar href="lib/log4j-1.2.16.jar" size="482413" download="eager" />
+    <jar href="lib/spring-aop-3.0.6.RELEASE.jar" size="326530" download="eager" />
+    <jar href="lib/spring-asm-3.0.6.RELEASE.jar" size="53960" download="eager" />
+    <jar href="lib/spring-beans-3.0.6.RELEASE.jar" size="563357" download="eager" />
+    <jar href="lib/spring-context-3.0.6.RELEASE.jar" size="679951" download="eager" />
+    <jar href="lib/spring-core-3.0.6.RELEASE.jar" size="387844" download="eager" />
+    <jar href="lib/spring-expression-3.0.6.RELEASE.jar" size="172454" download="eager" />
+    <jar href="lib/swing-layout-1.0.4.jar" size="118282" download="eager" />
+    </resources>
+    <application-desc
+         name="Dynamic Tree Demo Application"
+         main-class="pk.webdoor.fx.mvp.gui.WebdoorApp"
+         width="300"
+         height="300">
+     </application-desc>
+     <update check="background"/>
+</jnlp>                   

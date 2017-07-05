@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="root" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="pk.webdoor.fx.mvp.gui.presenters.MainPresenter">
+  <!-- Header -->
+  <!--  
+    <top>
+        <VBox spacing="5">
+            <styleClass><String fx:value="header"/></styleClass>
+            <children>
+                <Label text="First Contact">
+                    <styleClass>
+                        <String fx:value="label"/>
+                        <String fx:value="title"/>
+                    </styleClass>
+                </Label>
+                <Label text="JavaFX 2.0 Contact Management System">
+                    <styleClass>
+                        <String fx:value="label"/>
+                        <String fx:value="tag-line"/>
+                    </styleClass>
+                </Label>
+            </children>
+        </VBox>
+    </top>
+    -->
+  <!-- Content Area -->
+  <center>
+    <BorderPane fx:id="contentArea" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="body" />
+  </center>
+</BorderPane>

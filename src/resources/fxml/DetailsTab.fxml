@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="root" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-1.0" minWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" styleClass="backgroundColor" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="pk.webdoor.fx.mvp.gui.presenters.DetailsPresenter">
+  <children>
+    <AnchorPane layoutX="0.0" layoutY="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="414.0" prefHeight="520.0" prefWidth="526.0">
+      <HBox id="HBox" alignment="CENTER" layoutY="25.0" prefHeight="22.0" prefWidth="558.0" spacing="5.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+        <children>
+          <Label id="label4" fx:id="idLabel" minWidth="-Infinity" prefWidth="85.0" text="ID" />
+          <TextField id="textField1" fx:id="cid" editable="false" prefHeight="22.0" prefWidth="485.0" HBox.hgrow="ALWAYS" />
+        </children>
+      </HBox>
+      <HBox id="HBox" alignment="CENTER" layoutY="54.0" prefHeight="22.0" prefWidth="558.0" spacing="5.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+        <children>
+          <Label id="label4" fx:id="ckeyLabel" minWidth="-Infinity" prefWidth="85.0" text="Customer ID" />
+          <TextField id="textField1" fx:id="ckey" prefHeight="22.0" prefWidth="485.0" HBox.hgrow="ALWAYS" />
+        </children>
+      </HBox>
+      <HBox id="HBox" alignment="CENTER" layoutY="83.0" prefHeight="22.0" prefWidth="558.0" spacing="5.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+        <children>
+          <Label id="label4" fx:id="cnicLabel" minWidth="-Infinity" prefWidth="85.0" text="CNIC" />
+          <TextField id="textField1" fx:id="cnic" prefHeight="22.0" prefWidth="485.0" HBox.hgrow="ALWAYS" />
+        </children>
+      </HBox>
+      <HBox id="HBox" alignment="CENTER" layoutY="112.0" prefHeight="22.0" prefWidth="558.0" spacing="5.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+        <children>
+          <Label id="label4" fx:id="nameLabel" minWidth="-Infinity" prefWidth="85.0" text="Name" />
+          <TextField id="textField1" fx:id="name" prefHeight="22.0" prefWidth="485.0" HBox.hgrow="ALWAYS" />
+        </children>
+      </HBox>
+      <HBox id="HBox" alignment="CENTER" layoutY="141.0" prefHeight="22.0" prefWidth="558.0" spacing="5.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+        <children>
+          <Label id="label4" fx:id="fathernameLabel" minWidth="-Infinity" prefWidth="85.0" text="Fathername" />
+          <TextField id="textField1" fx:id="fathername" prefHeight="22.0" prefWidth="378.0" HBox.hgrow="ALWAYS" />
+        </children>
+      </HBox>
+      <HBox id="HBox" alignment="CENTER" layoutY="170.0" prefHeight="22.0" prefWidth="558.0" spacing="5.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+        <children>
+          <Label id="label4" fx:id="usernameLabel" minWidth="-Infinity" prefWidth="85.0" text="Username" />
+          <TextField id="textField1" fx:id="username" prefHeight="22.0" prefWidth="485.0" HBox.hgrow="ALWAYS" />
+        </children>
+      </HBox>
+      <HBox id="HBox" alignment="CENTER" layoutY="199.0" prefHeight="22.0" prefWidth="558.0" spacing="5.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+        <children>
+          <Label id="label4" fx:id="passwordLabel" minWidth="-Infinity" prefWidth="85.0" text="Password" />
+          <TextField id="textField1" fx:id="password" prefHeight="22.0" prefWidth="485.0" HBox.hgrow="ALWAYS" />
+        </children>
+      </HBox>
+      <HBox id="HBox" alignment="CENTER" layoutY="228.0" prefHeight="22.0" prefWidth="558.0" spacing="5.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+        <children>
+          <Label id="label4" fx:id="zoneLabel" minWidth="-Infinity" prefWidth="85.0" text="Zone" />
+          <TextField id="textField1" fx:id="zone" prefHeight="22.0" prefWidth="485.0" HBox.hgrow="ALWAYS" />
+        </children>
+      </HBox>
+      <HBox id="HBox" alignment="CENTER" layoutY="257.0" prefHeight="22.0" prefWidth="558.0" spacing="5.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+        <children>
+          <Label id="label4" fx:id="dorLabel" minWidth="-Infinity" prefWidth="85.0" text="Dor" />
+          <TextField id="textField1" fx:id="dor" prefHeight="22.0" prefWidth="485.0" HBox.hgrow="ALWAYS" />
+        </children>
+      </HBox>
+      <HBox id="HBox" alignment="CENTER" layoutY="286.0" prefHeight="22.0" prefWidth="558.0" spacing="5.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+        <children>
+          <Label id="label4" fx:id="telephoneLabel" minWidth="-Infinity" prefWidth="85.0" text="Telephone" />
+          <TextField id="textField1" fx:id="telephone" prefHeight="22.0" prefWidth="485.0" HBox.hgrow="ALWAYS" />
+        </children>
+      </HBox>
+      <HBox id="HBox" alignment="CENTER" layoutY="315.0" prefHeight="22.0" prefWidth="558.0" spacing="5.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+        <children>
+          <Label id="label4" fx:id="mobileLabel" minWidth="-Infinity" prefWidth="85.0" text="Mobile" />
+          <TextField id="textField1" fx:id="mobile" prefHeight="22.0" prefWidth="485.0" HBox.hgrow="ALWAYS" />
+        </children>
+      </HBox>
+      <HBox id="HBox" alignment="CENTER" layoutY="344.0" prefHeight="22.0" prefWidth="558.0" spacing="5.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+        <children>
+          <Label id="label4" fx:id="EmailLabel" minWidth="-Infinity" prefWidth="85.0" text="Email" />
+          <TextField id="textField1" fx:id="email" prefHeight="22.0" prefWidth="485.0" HBox.hgrow="ALWAYS" />
+        </children>
+      </HBox>
+      <HBox id="HBox" alignment="CENTER" layoutY="373.0" prefHeight="22.0" prefWidth="558.0" spacing="5.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+        <children>
+          <Label id="label4" fx:id="addressLabel" minWidth="-Infinity" prefWidth="85.0" text="Address" />
+          <TextField id="textField1" fx:id="address" prefHeight="22.0" prefWidth="485.0" HBox.hgrow="ALWAYS" />
+        </children>
+      </HBox>
+      <HBox id="HBox" alignment="CENTER" layoutY="402.0" prefHeight="22.0" prefWidth="558.0" spacing="5.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+        <children>
+          <Label id="label4" fx:id="packageLabel" minWidth="-Infinity" prefWidth="85.0" text="Package (MB)" />
+          <TextField id="textField1" fx:id="customerPackage" editable="false" prefHeight="22.0" prefWidth="245.0" HBox.hgrow="ALWAYS" />
+          <Label id="label4" fx:id="changePackageLabel" alignment="CENTER" contentDisplay="RIGHT" minWidth="-Infinity" opacity="1.0" prefWidth="109.0" text="Change Package" textAlignment="CENTER" />
+          <ChoiceBox fx:id="packagesList" prefWidth="102.0" HBox.hgrow="ALWAYS" />
+        </children>
+      </HBox>
+      <HBox id="HBox" alignment="CENTER" layoutX="20.0" layoutY="437.0" prefHeight="67.0" prefWidth="-1.0" spacing="5.0">
+        <children>
+          <Label id="label4" alignment="TOP_LEFT" contentDisplay="TOP" minWidth="-Infinity" prefHeight="59.0" prefWidth="85.0" text="Comments" textAlignment="LEFT" />
+          <TextArea id="textArea1" fx:id="comments" prefHeight="67.0" prefWidth="396.0" HBox.hgrow="ALWAYS" />
+        </children>
+      </HBox>
+    </AnchorPane>
+  </children>
+</AnchorPane>

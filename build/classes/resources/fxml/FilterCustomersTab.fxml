@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import org.google.jhsheets.filtered.FilteredTableView?>
+<?import org.google.jhsheets.filtered.tablecolumn.FilterableIntegerTableColumn?>
+<?import org.google.jhsheets.filtered.tablecolumn.FilterableStringTableColumn?>
+<?import org.google.jhsheets.filtered.tablecolumn.FilterableEnumTableColumn?>
+<?import org.google.jhsheets.filtered.tablecolumn.FilterableDateTableColumn?>
+<?import org.google.jhsheets.filtered.tablecolumn.FilterableIntegerTableColumn?>
+<?import org.google.jhsheets.filtered.tablecolumn.FilterableBooleanTableColumn?>
+
+<AnchorPane fx:id="root" maxHeight="-1.0" maxWidth="-1.0" minHeight="-1.0" minWidth="-1.0" prefHeight="472.0" prefWidth="-1.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="pk.webdoor.fx.mvp.gui.presenters.FilterCustomersPresenter">
+    <children>
+        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" minHeight="-1.0" prefHeight="517.0" prefWidth="-1.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <SplitPane dividerPositions="0.5262135922330097" styleClass="backgroundColor" focusTraversable="true" maxHeight="-1.0" maxWidth="-1.0" minHeight="-1.0" minWidth="-1.0" orientation="VERTICAL" prefHeight="563.0" prefWidth="-1.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                <items>
+                    <AnchorPane minHeight="-1.0" minWidth="-1.0" maxHeight="450.0" prefHeight="263.0" prefWidth="755.0">
+                        <children>
+                            <FilteredTableView fx:id="filteredTable" editable="true" VBox.vgrow="ALWAYS" style="-fx-font-size: 100%"
+                           tableMenuButtonVisible="true" maxHeight="-1.0" maxWidth="-1.0" minHeight="-Infinity" minWidth="-1.0" prefHeight="319.0" prefWidth="755.0" AnchorPane.bottomAnchor="-51.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <columns>
+                                    <FilterableIntegerTableColumn prefWidth="120.0" fx:id="colCkey" text="Cutomer ID">
+                                        <cellValueFactory>
+                                            <PropertyValueFactory property="ckey" />
+                                        </cellValueFactory>
+                                    </FilterableIntegerTableColumn>    
+                                    <FilterableStringTableColumn prefWidth="120.0" fx:id="colCnic" text="CNIC">
+                                        <cellValueFactory>
+                                            <PropertyValueFactory property="cnic" />
+                                        </cellValueFactory>
+                                    </FilterableStringTableColumn>  
+                                    <FilterableStringTableColumn prefWidth="120.0" fx:id="colName" text="Name">
+                                        <cellValueFactory>
+                                            <PropertyValueFactory property="name" />
+                                        </cellValueFactory>
+                                    </FilterableStringTableColumn>  
+                                    <FilterableStringTableColumn prefWidth="120.0" fx:id="colFathername" text="Fathername">
+                                        <cellValueFactory>
+                                            <PropertyValueFactory property="fathername" />
+                                        </cellValueFactory>
+                                    </FilterableStringTableColumn>   
+                                    <FilterableStringTableColumn prefWidth="120.0" fx:id="colUsername" text="Username">
+                                        <cellValueFactory>
+                                            <PropertyValueFactory property="username" />
+                                        </cellValueFactory>
+                                    </FilterableStringTableColumn> 
+                                    <FilterableStringTableColumn prefWidth="120.0" fx:id="colZone" text="Zone">
+                                        <cellValueFactory>
+                                            <PropertyValueFactory property="zone" />
+                                        </cellValueFactory>
+                                    </FilterableStringTableColumn> 
+                                    <FilterableStringTableColumn prefWidth="120.0" fx:id="colDor" text="DOR">
+                                        <cellValueFactory>
+                                            <PropertyValueFactory property="dor" />
+                                        </cellValueFactory>
+                                    </FilterableStringTableColumn> 
+                                </columns>
+                            </FilteredTableView>
+                        </children>
+                    </AnchorPane>
+                </items>
+            </SplitPane>
+        </AnchorPane>
+    </children>
+</AnchorPane>
+

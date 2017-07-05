@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="830.0" prefWidth="1190.0" xmlns:fx="http://javafx.com/fxml" fx:controller="pk.webdoor.fx.mvp.gui.presenters.CustomersPresenter">
+  <children>
+    <SplitPane id="splitPaneHorizontal1" dividerPositions="0.2138047138047138" focusTraversable="true" prefHeight="616.0" prefWidth="1130.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="154.0">
+      <items>
+        <AnchorPane id="anchorPane1" minHeight="0.0" minWidth="0.0" prefHeight="586.0" prefWidth="238.0">
+          <children>
+            <HBox id="HBox" alignment="CENTER" spacing="5.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+              <children>
+                <Label text="Search Name:" />
+                <TextField fx:id="filterField" HBox.hgrow="ALWAYS" />
+              </children>
+            </HBox>
+            <TableView id="tableView1" fx:id="table" prefHeight="628.0" prefWidth="251.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="46.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="Name" fx:id="colName" />
+                <TableColumn prefWidth="75.0" text="Fathername" fx:id="colFathername" />
+              </columns>
+            </TableView>
+          </children>
+        </AnchorPane>
+        <AnchorPane id="anchorPane2" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+          <children>
+            <SplitPane id="splitPaneVertical1" focusTraversable="true" orientation="VERTICAL" prefHeight="598.0" prefWidth="595.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <items>
+                <TabPane fx:id="customerTabs" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE">
+                  <tabs>
+                    <Tab fx:id="detailsTab" text="Customer Details">
+                      <content>
+                        <AnchorPane id="anchorPane4" fx:id="details" blendMode="SRC_ATOP" cache="true" cacheHint="QUALITY" minHeight="0.0" minWidth="0.0" prefHeight="584.0" prefWidth="803.0">
+                          <children>
+                            <HBox id="HBox" alignment="CENTER" layoutY="24.0" prefHeight="22.0" prefWidth="558.0" spacing="5.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+                              <children>
+                                <Label id="label4" fx:id="idLabel" minWidth="-Infinity" prefWidth="85.0" text="ID" />
+                                <TextField id="textField1" fx:id="cid" editable="false" prefHeight="22.0" prefWidth="485.0" HBox.hgrow="ALWAYS" />
+                              </children>
+                            </HBox>
+                            <HBox id="HBox" alignment="CENTER" layoutY="53.0" prefHeight="22.0" prefWidth="558.0" spacing="5.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+                              <children>
+                                <Label id="label4" fx:id="cnicLabel" minWidth="-Infinity" prefWidth="85.0" text="CNIC" />
+                                <TextField id="textField1" fx:id="cnic" prefHeight="22.0" prefWidth="485.0" HBox.hgrow="ALWAYS" />
+                              </children>
+                            </HBox>
+                            <HBox id="HBox" alignment="CENTER" layoutY="82.0" prefHeight="22.0" prefWidth="558.0" spacing="5.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+                              <children>
+                                <Label id="label4" fx:id="nameLabel" minWidth="-Infinity" prefWidth="85.0" text="Name" />
+                                <TextField id="textField1" fx:id="name" prefHeight="22.0" prefWidth="485.0" HBox.hgrow="ALWAYS" />
+                              </children>
+                            </HBox>
+                            <HBox id="HBox" alignment="CENTER" layoutY="111.0" prefHeight="22.0" prefWidth="558.0" spacing="5.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+                              <children>
+                                <Label id="label4" fx:id="fathernameLabel" minWidth="-Infinity" prefWidth="85.0" text="Fathername" />
+                                <TextField id="textField1" fx:id="fathername" prefHeight="22.0" prefWidth="378.0" HBox.hgrow="ALWAYS" />
+                              </children>
+                            </HBox>
+                            <HBox id="HBox" alignment="CENTER" layoutY="140.0" prefHeight="22.0" prefWidth="558.0" spacing="5.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+                              <children>
+                                <Label id="label4" fx:id="usernameLabel" minWidth="-Infinity" prefWidth="85.0" text="Username" />
+                                <TextField id="textField1" fx:id="username" prefHeight="22.0" prefWidth="485.0" HBox.hgrow="ALWAYS" />
+                              </children>
+                            </HBox>
+                            <HBox id="HBox" alignment="CENTER" layoutY="169.0" prefHeight="22.0" prefWidth="558.0" spacing="5.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+                              <children>
+                                <Label id="label4" fx:id="passwordLabel" minWidth="-Infinity" prefWidth="85.0" text="Password" />
+                                <TextField id="textField1" fx:id="password" prefHeight="22.0" prefWidth="485.0" HBox.hgrow="ALWAYS" />
+                              </children>
+                            </HBox>
+                            <HBox id="HBox" alignment="CENTER" layoutY="198.0" prefHeight="22.0" prefWidth="558.0" spacing="5.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+                              <children>
+                                <Label id="label4" fx:id="zoneLabel" minWidth="-Infinity" prefWidth="85.0" text="Zone" />
+                                <TextField id="textField1" fx:id="zone" prefHeight="22.0" prefWidth="485.0" HBox.hgrow="ALWAYS" />
+                              </children>
+                            </HBox>
+                            <HBox id="HBox" alignment="CENTER" layoutY="227.0" prefHeight="22.0" prefWidth="558.0" spacing="5.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+                              <children>
+                                <Label id="label4" fx:id="dorLabel" minWidth="-Infinity" prefWidth="85.0" text="Dor" />
+                                <TextField id="textField1" fx:id="dor" prefHeight="22.0" prefWidth="485.0" HBox.hgrow="ALWAYS" />
+                              </children>
+                            </HBox>
+                            <HBox id="HBox" alignment="CENTER" layoutY="256.0" prefHeight="22.0" prefWidth="558.0" spacing="5.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+                              <children>
+                                <Label id="label4" fx:id="telephoneLabel" minWidth="-Infinity" prefWidth="85.0" text="Telephone" />
+                                <TextField id="textField1" fx:id="telephone" prefHeight="22.0" prefWidth="485.0" HBox.hgrow="ALWAYS" />
+                              </children>
+                            </HBox>
+                            <HBox id="HBox" alignment="CENTER" layoutY="285.0" prefHeight="22.0" prefWidth="558.0" spacing="5.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+                              <children>
+                                <Label id="label4" fx:id="mobileLabel" minWidth="-Infinity" prefWidth="85.0" text="Mobile" />
+                                <TextField id="textField1" fx:id="mobile" prefHeight="22.0" prefWidth="485.0" HBox.hgrow="ALWAYS" />
+                              </children>
+                            </HBox>
+                            <HBox id="HBox" alignment="CENTER" layoutY="314.0" prefHeight="22.0" prefWidth="558.0" spacing="5.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+                              <children>
+                                <Label id="label4" fx:id="EmailLabel" minWidth="-Infinity" prefWidth="85.0" text="Email" />
+                                <TextField id="textField1" fx:id="email" prefHeight="22.0" prefWidth="485.0" HBox.hgrow="ALWAYS" />
+                              </children>
+                            </HBox>
+                            <HBox id="HBox" alignment="CENTER" layoutY="343.0" prefHeight="22.0" prefWidth="558.0" spacing="5.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+                              <children>
+                                <Label id="label4" fx:id="addressLabel" minWidth="-Infinity" prefWidth="85.0" text="Address" />
+                                <TextField id="textField1" fx:id="address" prefHeight="22.0" prefWidth="485.0" HBox.hgrow="ALWAYS" />
+                              </children>
+                            </HBox>
+                            <HBox id="HBox" alignment="CENTER" layoutY="372.0" prefHeight="22.0" prefWidth="558.0" spacing="5.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+                              <children>
+                                <Label id="label4" fx:id="packageLabel" minWidth="-Infinity" prefWidth="85.0" text="Package (MB)" />
+                                <ChoiceBox fx:id="packagesList" prefWidth="797.9998779296875" HBox.hgrow="ALWAYS" />
+                              </children>
+                            </HBox>
+                          </children>
+                          <effect>
+                            <DropShadow blurType="TWO_PASS_BOX" color="#66a3ff" height="61.47619047618902" radius="30.238095238094875" width="61.47619047619048">
+                              <input>
+                                <ColorAdjust brightness="-0.01526717557251911" contrast="-0.2748091603053435" hue="-0.6717557251908397" saturation="-0.10687022900763354" />
+                              </input>
+                            </DropShadow>
+                          </effect>
+                        </AnchorPane>
+                      </content>
+                    </Tab>
+                    <Tab fx:id="invoicesTab" text="Customer Invoices" />
+                    <Tab fx:id="createBill" text="Billing Mangement">
+                      <!--  
+                      <content>
+                        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                          <children>
+                            <fx:include source="BillingManagement.fxml" />
+                          </children>
+                        </AnchorPane>
+                      </content>
+                      -->
+                    </Tab>
+                  </tabs>
+                </TabPane>
+              </items>
+            </SplitPane>
+          </children>
+        </AnchorPane>
+      </items>
+    </SplitPane>
+    <HBox id="HBox" alignment="CENTER" prefHeight="61.0" prefWidth="205.0" spacing="15.0" AnchorPane.rightAnchor="83.0" AnchorPane.topAnchor="52.0">
+      <children>
+        <Button id="button1" fx:id="newCustomer" graphicTextGap="6.0" onAction="#newCustomerFired" prefHeight="48.0" prefWidth="48.0" styleClass="newButton" textFill="#292929" />
+        <Button id="button1" fx:id="saveCustomer" graphicTextGap="6.0" onAction="#saveCustomerFired" prefHeight="48.0" prefWidth="48.0" styleClass="saveButton" />
+        <Button id="button1" fx:id="deleteCustomer" graphicTextGap="6.0" onAction="#deleteCustomerFired" prefHeight="48.0" prefWidth="48.0" styleClass="delButton" />
+      </children>
+    </HBox>
+    <HBox id="HBox" alignment="CENTER" spacing="15.0" AnchorPane.rightAnchor="23.0" AnchorPane.topAnchor="52.0" />
+    <ImageView id="IssueTrackingLite" fitHeight="129.0" fitWidth="156.99951171875" layoutX="14.0" layoutY="14.0">
+      <image>
+        <Image url="@../webdoor.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <!--  
+    <fx:include source="Messages.fxml" layoutX="1.0" prefHeight="28.0" prefWidth="93.0" />
+    -->
+  </children>
+  <stylesheets>
+    <URL value="@../webdoor.css" />
+  </stylesheets>
+</AnchorPane>

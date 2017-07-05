@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="root" styleClass="backgroundColor" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="pk.webdoor.fx.mvp.gui.presenters.MainPresenter">
+  <!--  
+    <children>
+        <AnchorPane id="anchorPane1" minHeight="0.0" minWidth="0.0" prefHeight="586.0" prefWidth="238.0">
+          <children>
+            <HBox id="HBox" alignment="CENTER" spacing="5.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+              <children>
+                <Label text="Search Name:" />
+                <TextField fx:id="filterField" HBox.hgrow="ALWAYS" />
+              </children>
+            </HBox>
+            <TableView id="tableView1" fx:id="table" prefHeight="628.0" prefWidth="251.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="46.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="Name" fx:id="colName" />
+                <TableColumn prefWidth="75.0" text="Fathername" fx:id="colFathername" />
+              </columns>
+            </TableView>
+          </children>
+        </AnchorPane>
+    </children>
+    
+    -->
+  <children>
+    <SplitPane id="splitPaneHorizontal1" dividerPositions="0.2429078014184397" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="616.0" prefWidth="1130.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="154.0">
+      <items>
+        <BorderPane fx:id="customersPane" maxHeight="-1.0" maxWidth="-Infinity" minHeight="-1.0" minWidth="-Infinity" prefHeight="614.0" prefWidth="271.0" />
+        <AnchorPane id="anchorPane2" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+          <children>
+            <SplitPane id="splitPaneVertical1" focusTraversable="true" orientation="VERTICAL" prefHeight="598.0" prefWidth="595.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <items>
+                <TabPane fx:id="customerTabs" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE">
+                  <tabs>
+                    <Tab fx:id="detailsTab" text="Customer Details" />
+                    <Tab fx:id="invoicesTab" text="Customer Invoices" />
+                    <Tab fx:id="createBill" text="Billing Mangement" />
+                    <Tab fx:id="filterCustomerTab" text="Search Customers" />
+                    <!--  
+                      <content>
+                        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                          <children>
+                            <fx:include source="BillingManagement.fxml" />
+                          </children>
+                        </AnchorPane>
+                      </content>
+                      -->
+                  </tabs>
+                </TabPane>
+              </items>
+            </SplitPane>
+          </children>
+        </AnchorPane>
+      </items>
+    </SplitPane>
+    <HBox id="HBox" alignment="CENTER" prefHeight="61.0" prefWidth="205.0" spacing="15.0" AnchorPane.rightAnchor="83.0" AnchorPane.topAnchor="52.0">
+      <children>
+        <Button id="button1" fx:id="newCustomer" graphicTextGap="6.0" onAction="#newCustomerFired" prefHeight="48.0" prefWidth="48.0" styleClass="newButton, webdoorButton">
+          <textFill>
+            <Color blue="0.161" green="0.161" red="0.161" fx:id="x1" />
+          </textFill>
+        </Button>
+        <Button id="button1" fx:id="saveCustomer" graphicTextGap="6.0" onAction="#saveCustomerFired" prefHeight="48.0" prefWidth="48.0" styleClass="saveButton, webdoorButton" />
+        <Button id="button1" fx:id="deleteCustomer" graphicTextGap="6.0" onAction="#deleteCustomerFired" prefHeight="48.0" prefWidth="48.0" styleClass="delButton, webdoorButton" />
+      </children>
+    </HBox>
+    <Label fx:id="messageBar" layoutX="180.0" layoutY="96.0" maxHeight="-Infinity" minHeight="-Infinity" minWidth="269.0" prefHeight="35.0" prefWidth="627.0">
+      <font>
+        <Font name="System Bold" size="20.0" fx:id="x2" />
+      </font>
+    </Label>
+    <Button fx:id="logo" graphicTextGap="6.0" layoutX="14.0" layoutY="27.0" prefHeight="116.0" prefWidth="133.0" styleClass="webdoorlogo" textFill="$x1" textOverrun="ELLIPSIS">
+      <effect>
+        <DropShadow blurType="GAUSSIAN" height="64.70238095238093" radius="31.851190476190467" width="64.70238095238093" />
+      </effect>
+    </Button>
+    <Label fx:id="webdoorlabel" layoutX="180.0" layoutY="12.0" maxHeight="-Infinity" minHeight="-Infinity" minWidth="259.0" opacity="0.74" prefHeight="71.0" prefWidth="520.0" text="WebDoor (Private) Limited" textFill="BLACK" textOverrun="LEADING_ELLIPSIS">
+      <effect>
+        <InnerShadow color="#8d8d8d" height="0.0" offsetX="9.0" offsetY="9.0" radius="28.33928571428571" width="115.35714285714285" />
+      </effect>
+      <font>
+        <Font name="Arial Black" size="30.0" />
+      </font>
+    </Label>
+  </children>
+</AnchorPane>

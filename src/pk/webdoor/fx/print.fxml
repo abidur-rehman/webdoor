@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" depthTest="DISABLE" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="830.0" prefWidth="671.0" xmlns:fx="http://javafx.com/fxml" fx:controller="pk.webdoor.fx.PrintController">
+  <children>
+    <ImageView id="webdoor" fitHeight="78.0" fitWidth="76.99951171875" layoutX="34.0" layoutY="14.0">
+      <image>
+        <Image url="@../../../../resources/webdoor.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <Label layoutX="251.0" layoutY="56.0" prefHeight="36.0" prefWidth="163.0" text="WEB DOOR Pvt. Ltd.">
+      <font>
+        <Font name="System Bold" size="16.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Label font="$x1" layoutX="294.0" layoutY="105.0" text="INVOICE" underline="true" />
+    <GridPane layoutX="13.0" layoutY="136.0" prefHeight="129.99990000000253" prefWidth="644.0000915527344" styleClass="flowPane">
+      <children>
+        <HBox prefHeight="36.0" prefWidth="320.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
+          <children>
+            <Label fx:id="cNamel" prefHeight="32.0" prefWidth="103.0" text="Customer's Name:">
+              <HBox.margin>
+                <Insets left="6.0" />
+              </HBox.margin>
+            </Label>
+            <TextField fx:id="cName" editable="false" prefHeight="44.0" prefWidth="200.0" />
+          </children>
+        </HBox>
+        <HBox prefHeight="36.0" prefWidth="320.0" GridPane.columnIndex="0" GridPane.rowIndex="1">
+          <children>
+            <Label fx:id="cFNamel" prefHeight="32.0" prefWidth="103.0" text="Father's Name:">
+              <HBox.margin>
+                <Insets left="6.0" />
+              </HBox.margin>
+            </Label>
+            <TextField fx:id="cFName" editable="false" prefHeight="44.0" prefWidth="200.0" />
+          </children>
+        </HBox>
+        <HBox prefHeight="36.0" prefWidth="320.0" GridPane.columnIndex="0" GridPane.rowIndex="2">
+          <children>
+            <Label fx:id="cAddressl" prefHeight="32.0" prefWidth="103.0" text="Address:">
+              <HBox.margin>
+                <Insets left="6.0" />
+              </HBox.margin>
+            </Label>
+            <TextField fx:id="cAddress" editable="false" prefHeight="44.0" prefWidth="200.0" />
+          </children>
+        </HBox>
+        <HBox prefHeight="36.0" prefWidth="320.0" GridPane.columnIndex="0" GridPane.rowIndex="3">
+          <children>
+            <Label fx:id="cMobilel" prefHeight="32.0" prefWidth="103.0" text="Mobile Number:">
+              <HBox.margin>
+                <Insets left="6.0" />
+              </HBox.margin>
+            </Label>
+            <TextField fx:id="cMobile" editable="false" prefHeight="44.0" prefWidth="200.0" />
+          </children>
+        </HBox>
+        <HBox prefHeight="36.0" prefWidth="320.0" GridPane.columnIndex="1" GridPane.rowIndex="0">
+          <children>
+            <Label fx:id="cKeyLabel" prefHeight="32.0" prefWidth="103.0" text="Customer ID:">
+              <HBox.margin>
+                <Insets left="6.0" />
+              </HBox.margin>
+            </Label>
+            <TextField fx:id="cKey" editable="false" prefHeight="32.0" prefWidth="213.0" />
+          </children>
+        </HBox>
+        <HBox prefHeight="36.0" prefWidth="320.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+          <children>
+            <Label fx:id="cZonel" prefHeight="32.0" prefWidth="103.0" text="Zone:">
+              <HBox.margin>
+                <Insets left="6.0" />
+              </HBox.margin>
+            </Label>
+            <TextField fx:id="cZone" editable="false" prefHeight="32.0" prefWidth="213.0" />
+          </children>
+        </HBox>
+        <HBox prefHeight="36.0" prefWidth="320.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+          <children>
+            <Label fx:id="cPackagel" prefHeight="32.0" prefWidth="103.0" text="Package:">
+              <HBox.margin>
+                <Insets left="6.0" />
+              </HBox.margin>
+            </Label>
+            <TextField fx:id="cPackage" editable="false" prefHeight="32.0" prefWidth="213.0" />
+          </children>
+        </HBox>
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="326.0" minWidth="10.0" prefWidth="320.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="338.0" minWidth="10.0" prefWidth="321.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+      <stylesheets>
+        <URL value="@../../../../resources/webdoor.css" />
+      </stylesheets>
+    </GridPane>
+    <GridPane layoutX="12.0" layoutY="277.0" prefWidth="644.0000915527344" styleClass="flowPane">
+      <children>
+        <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
+          <children>
+            <Label prefHeight="30.0" prefWidth="126.0" text="Billing Month">
+              <HBox.margin>
+                <Insets left="8.0" />
+              </HBox.margin>
+            </Label>
+            <TextField fx:id="bMonth" editable="false" prefHeight="30.0" prefWidth="509.0" />
+          </children>
+        </HBox>
+        <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="1">
+          <children>
+            <Label prefHeight="30.0" prefWidth="126.0" text="Issue Date">
+              <HBox.margin>
+                <Insets left="8.0" />
+              </HBox.margin>
+            </Label>
+            <TextField fx:id="iDate" editable="false" prefHeight="30.0" prefWidth="509.0" />
+          </children>
+        </HBox>
+        <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="2">
+          <children>
+            <Label prefHeight="30.0" prefWidth="126.0" text="Due Date">
+              <HBox.margin>
+                <Insets left="8.0" />
+              </HBox.margin>
+            </Label>
+            <TextField fx:id="dDate" editable="false" prefHeight="30.0" prefWidth="509.0" />
+          </children>
+        </HBox>
+        <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="3">
+          <children>
+            <Label prefHeight="30.0" prefWidth="126.0" text="Payable on Due Date">
+              <HBox.margin>
+                <Insets left="8.0" />
+              </HBox.margin>
+            </Label>
+            <TextField fx:id="amount" editable="false" prefHeight="30.0" prefWidth="509.0" />
+          </children>
+        </HBox>
+        <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="4">
+          <children>
+            <Label prefHeight="30.0" prefWidth="126.0" text="After Due Date">
+              <HBox.margin>
+                <Insets left="8.0" />
+              </HBox.margin>
+            </Label>
+            <TextField fx:id="fine" editable="false" prefHeight="30.0" prefWidth="509.0" />
+          </children>
+        </HBox>
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+      <stylesheets>
+        <URL value="@../../../../resources/webdoor.css" />
+      </stylesheets>
+    </GridPane>
+    <GridPane layoutX="14.0" layoutY="676.0" prefHeight="130.0001220703125" prefWidth="643.0000999999975" styleClass="flowPane">
+      <children>
+        <HBox prefHeight="36.0" prefWidth="320.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
+          <children>
+            <Label prefHeight="32.0" prefWidth="103.0" text="Customer ID:">
+              <HBox.margin>
+                <Insets left="6.0" />
+              </HBox.margin>
+            </Label>
+            <TextField fx:id="cKeyRecept" editable="false" prefHeight="44.0" prefWidth="200.0" />
+          </children>
+        </HBox>
+        <HBox prefHeight="36.0" prefWidth="320.0" GridPane.columnIndex="0" GridPane.rowIndex="1">
+          <children>
+            <Label prefHeight="32.0" prefWidth="103.0" text="Customer's Name:">
+              <HBox.margin>
+                <Insets left="6.0" />
+              </HBox.margin>
+            </Label>
+            <TextField fx:id="cCusNameRecept" editable="false" prefHeight="44.0" prefWidth="200.0" />
+          </children>
+        </HBox>
+        <HBox prefHeight="36.0" prefWidth="320.0" GridPane.columnIndex="0" GridPane.rowIndex="2">
+          <children>
+            <Label prefHeight="32.0" prefWidth="103.0" text="Address:">
+              <HBox.margin>
+                <Insets left="6.0" />
+              </HBox.margin>
+            </Label>
+            <TextField fx:id="cCusAddRecept" editable="false" prefHeight="44.0" prefWidth="200.0" />
+          </children>
+        </HBox>
+        <HBox prefHeight="36.0" prefWidth="320.0" GridPane.columnIndex="0" GridPane.rowIndex="3">
+          <children>
+            <Label prefHeight="32.0" prefWidth="103.0" text="Mobile Number:">
+              <HBox.margin>
+                <Insets left="6.0" />
+              </HBox.margin>
+            </Label>
+            <TextField fx:id="cCusMobRecept" editable="false" prefHeight="44.0" prefWidth="200.0" />
+          </children>
+        </HBox>
+        <HBox prefHeight="36.0" prefWidth="320.0" GridPane.columnIndex="1" GridPane.rowIndex="0">
+          <children>
+            <Label prefHeight="32.0" prefWidth="103.0" text="Zone:">
+              <HBox.margin>
+                <Insets left="6.0" />
+              </HBox.margin>
+            </Label>
+            <TextField fx:id="cCusZonRecept" editable="false" prefHeight="32.0" prefWidth="212.0" />
+          </children>
+        </HBox>
+        <HBox prefHeight="36.0" prefWidth="320.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+          <children>
+            <Label prefHeight="32.0" prefWidth="103.0" text="Package:">
+              <HBox.margin>
+                <Insets left="6.0" />
+              </HBox.margin>
+            </Label>
+            <TextField fx:id="cCusPacRecept" editable="false" prefHeight="32.0" prefWidth="212.0" />
+          </children>
+        </HBox>
+        <HBox prefHeight="36.0" prefWidth="320.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+          <children>
+            <Label prefHeight="32.0" prefWidth="103.0" text="On Due Date:">
+              <HBox.margin>
+                <Insets left="6.0" />
+              </HBox.margin>
+            </Label>
+            <TextField fx:id="amountRecept" editable="false" prefHeight="32.0" prefWidth="212.0" />
+          </children>
+        </HBox>
+        <HBox prefHeight="36.0" prefWidth="320.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+          <children>
+            <Label prefHeight="32.0" prefWidth="103.0" text="After Due Date:">
+              <HBox.margin>
+                <Insets left="6.0" />
+              </HBox.margin>
+            </Label>
+            <TextField fx:id="feeRecept" editable="false" prefHeight="32.0" prefWidth="212.0" />
+          </children>
+        </HBox>
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="326.0" minWidth="10.0" prefWidth="320.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="338.0" minWidth="10.0" prefWidth="321.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+      <stylesheets>
+        <URL value="@../../../../resources/webdoor.css" />
+      </stylesheets>
+    </GridPane>
+    <FlowPane layoutX="13.0" layoutY="442.0" minHeight="152.0" prefHeight="156.0" prefWidth="645.0" styleClass="flowPane">
+      <children>
+        <GridPane alignment="TOP_RIGHT" prefHeight="152.0" prefWidth="387.0">
+          <children>
+            <Label fx:id="billhistory" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="387.0" text="Bill History" underline="true" GridPane.columnIndex="0" GridPane.rowIndex="0">
+              <font>
+                <Font name="System Bold" size="14.0" fx:id="x2" />
+              </font>
+            </Label>
+            <TableView fx:id="billHistory" mouseTransparent="true" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="1">
+              <columns>
+                <TableColumn prefWidth="75.0" style="" text="Month" fx:id="historyMonth" />
+                <TableColumn prefWidth="75.0" text="Status" fx:id="historystatus" />
+                <TableColumn prefWidth="75.0" text="Date" fx:id="historyPaidOn" />
+                <TableColumn prefWidth="75.0" text="Amount" fx:id="historyAmount" />
+              </columns>
+            </TableView>
+          </children>
+          <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          </columnConstraints>
+          <rowConstraints>
+            <RowConstraints maxHeight="51.0" minHeight="10.0" prefHeight="23.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="129.0" minHeight="10.0" prefHeight="129.0" vgrow="SOMETIMES" />
+          </rowConstraints>
+        </GridPane>
+        <Line endX="96.8431396484375" endY="349.49725341796875" startX="96.8431396484375" startY="196.49729919433594" />
+        <GridPane alignment="TOP_RIGHT" prefHeight="152.0" prefWidth="254.0">
+          <children>
+            <Label fx:id="otherCharges" alignment="CENTER" contentDisplay="CENTER" font="$x2" prefHeight="30.0" prefWidth="254.0" text="Other Charges" underline="true" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="53.0" stroke="BLACK" strokeType="INSIDE" width="163.0" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+          </children>
+          <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          </columnConstraints>
+          <rowConstraints>
+            <RowConstraints maxHeight="51.0" minHeight="10.0" prefHeight="28.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="109.0" minHeight="10.0" prefHeight="73.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="51.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+          </rowConstraints>
+        </GridPane>
+      </children>
+      <stylesheets>
+        <URL value="@../../../../resources/webdoor.css" />
+      </stylesheets>
+    </FlowPane>
+  </children>
+</AnchorPane>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane fx:id="root" maxHeight="-1.0" maxWidth="-1.0" minHeight="-1.0" minWidth="-1.0" prefHeight="472.0" prefWidth="-1.0" styleClass="backgroundColor" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="pk.webdoor.fx.mvp.gui.presenters.BillingManagementPresenter">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" minHeight="-1.0" prefHeight="517.0" prefWidth="-1.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <SplitPane dividerPositions="0.5262135922330097" focusTraversable="true" maxHeight="-1.0" maxWidth="-1.0" minHeight="-1.0" minWidth="-1.0" orientation="VERTICAL" prefHeight="563.0" prefWidth="-1.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="-1.0" minWidth="-1.0" prefHeight="263.0" prefWidth="755.0">
+            <children>
+              <TableView fx:id="monthsTable" maxHeight="-1.0" maxWidth="-1.0" minHeight="-Infinity" minWidth="-1.0" prefHeight="319.0" prefWidth="755.0" AnchorPane.bottomAnchor="-51.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                <columns>
+                  <TableColumn prefWidth="75.0" text="ID" fx:id="mID" />
+                  <TableColumn minWidth="15.0" prefWidth="100.0" text="Month" fx:id="mMonth" />
+                  <TableColumn minWidth="15.0" prefWidth="100.0" text="Issue Date" fx:id="mIssueDate" />
+                  <TableColumn prefWidth="100.0" text="Due Date" fx:id="mDueDate" />
+                  <TableColumn prefWidth="100.0" text="Payment" fx:id="mPayment" />
+                  <TableColumn prefWidth="100.0" text="After Due Date" fx:id="mFine" />
+                </columns>
+              </TableView>
+            </children>
+          </AnchorPane>
+          <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="241.0" prefWidth="-1.0" styleClass="backgroundColor">
+            <children>
+              <HBox layoutX="108.0" layoutY="23.0" prefHeight="36.0" prefWidth="369.0">
+                <children>
+                  <Button mnemonicParsing="false" onAction="#showMonthDialog" prefHeight="22.0" prefWidth="129.0" styleClass="webdoorButton" text="Create New Month" />
+                  <Button contentDisplay="RIGHT" mnemonicParsing="false" onAction="#editMonthDialog" prefHeight="22.0" prefWidth="97.0" styleClass="webdoorButton" text="Edit Month" textAlignment="RIGHT">
+                    <HBox.margin>
+                      <Insets left="15.0" />
+                    </HBox.margin>
+                  </Button>
+                  <Button contentDisplay="RIGHT" mnemonicParsing="false" onAction="#deleteMonth" prefHeight="22.0" prefWidth="97.0" styleClass="webdoorButton" text="Delete Month" textAlignment="RIGHT">
+                    <HBox.margin>
+                      <Insets left="15.0" />
+                    </HBox.margin>
+                  </Button>
+                </children>
+              </HBox>
+            </children>
+          </AnchorPane>
+        </items>
+      </SplitPane>
+    </AnchorPane>
+  </children>
+</AnchorPane>

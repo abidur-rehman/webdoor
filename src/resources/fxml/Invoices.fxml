@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="root" maxHeight="-1.0" maxWidth="-1.0" minHeight="-1.0" minWidth="-1.0" prefHeight="641.0" prefWidth="929.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="pk.webdoor.fx.mvp.gui.presenters.InvoicesPresenter">
+  <children>
+    <SplitPane dividerPositions="0.30672926447574334" focusTraversable="true" maxHeight="-1.0" maxWidth="-1.0" minHeight="-1.0" minWidth="-1.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <items>
+        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" minHeight="-Infinity" minWidth="-1.0" prefHeight="148.0" prefWidth="927.0">
+          <children>
+            <TableView fx:id="invoicesTable" disable="false" editable="false" maxHeight="-1.0" maxWidth="-1.0" minHeight="-Infinity" minWidth="-1.0" prefHeight="148.0" prefWidth="927.0" tableMenuButtonVisible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="Invoice ID" fx:id="invoiceID" />
+                <TableColumn prefWidth="100.0" text="Month" fx:id="invoiceMonth" />
+                <TableColumn prefWidth="100.0" text="Issue Date" fx:id="invoiceIssueDate" />
+                <TableColumn prefWidth="100.0" text="Due Date" fx:id="invoiceDueDate" />
+                <TableColumn prefWidth="100.0" text="Payment" fx:id="invoiceSum" />
+                <TableColumn editable="true" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" resizable="true" text="After Due Date" visible="true" fx:id="invoiceAfterDue" />
+              </columns>
+            </TableView>
+          </children>
+        </AnchorPane>
+        <AnchorPane minHeight="-1.0" minWidth="-1.0" prefHeight="100.0" prefWidth="160.0">
+          <children>
+            <SplitPane dividerPositions="0.6118721461187214" focusTraversable="true" orientation="VERTICAL" prefHeight="485.0" prefWidth="927.0" styleClass="backgroundColor" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <items>
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="265.0" prefWidth="925.0" snapToPixel="false" styleClass="backgroundColor">
+                  <children>
+                    <GridPane fx:id="invoiceDetails" prefHeight="118.0" prefWidth="740.0" AnchorPane.bottomAnchor="133.0" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="159.0" AnchorPane.topAnchor="45.0">
+                      <children>
+                        <Label fx:id="IIdDetailsLabel" contentDisplay="RIGHT" prefHeight="33.0" prefWidth="63.0" text="Invoice ID" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                        <Label fx:id="IStatusDetailsLabel" alignment="CENTER" prefWidth="90.0" text="Status" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+                        <Label fx:id="IPaidOnDetailsLabel" text="Paid On" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                        <Label fx:id="IAmountDetailsLabel" alignment="CENTER" prefWidth="122.0" text="Amount Paid" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <TextField fx:id="IIdDetailsText" editable="false" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                        <TextField fx:id="IPaidOnDetailsText" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <TextField fx:id="IStatusDetailsText" prefWidth="326.0" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+                        <TextField fx:id="IAmountDetailsText" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                        <HBox prefHeight="26.0" prefWidth="346.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                          <children>
+                            <Button fx:id="printButton" mnemonicParsing="false" onAction="#printInvoice" prefHeight="22.0" styleClass="webdoorButton" text="Print Invoice" />
+                            <Button fx:id="updateInvoiceButton" mnemonicParsing="false" onAction="#updateInvoice" prefHeight="22.0" prefWidth="103.0" styleClass="webdoorButton" text="Update Invoice">
+                              <HBox.margin>
+                                <Insets left="4.0" />
+                              </HBox.margin>
+                            </Button>
+                            <Button fx:id="deleteInvoiceButton" mnemonicParsing="false" onAction="#deleteInvoice" prefHeight="22.0" prefWidth="103.0" styleClass="webdoorButton" text="Delete Invoice">
+                              <HBox.margin>
+                                <Insets left="4.0" />
+                              </HBox.margin>
+                            </Button>
+                          </children>
+                        </HBox>
+                      </children>
+                      <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="221.0" minWidth="10.0" prefWidth="65.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="339.0" minWidth="10.0" prefWidth="218.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="410.0" minWidth="10.0" prefWidth="86.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="387.0" minWidth="10.0" prefWidth="346.0" />
+                      </columnConstraints>
+                      <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      </rowConstraints>
+                    </GridPane>
+                    <Label layoutX="20.0" layoutY="16.0" prefWidth="156.99951171875" text="Invoice Details" />
+                    <Label layoutX="14.0" layoutY="235.0" prefHeight="29.0" prefWidth="233.0" text="Create new invoice via Drag and Drop" />
+                  </children>
+                </AnchorPane>
+                <AnchorPane minHeight="-1.0" minWidth="-1.0" prefHeight="198.0" prefWidth="925.0" SplitPane.resizableWithParent="false">
+                  <children>
+                    <TableView fx:id="productsTable" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="167.0" prefWidth="925.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                      <columns>
+                        <TableColumn prefWidth="75.0" text="ID" fx:id="pID" />
+                        <TableColumn minWidth="15.0" prefWidth="100.0" text="Month" fx:id="pMonth" />
+                        <TableColumn minWidth="15.0" prefWidth="100.0" text="Issue Date" fx:id="pIssueDate" />
+                        <TableColumn prefWidth="100.0" text="Due Date" fx:id="pDueDate" />
+                        <TableColumn prefWidth="100.0" text="Payment" fx:id="pPayment" />
+                        <TableColumn prefWidth="100.0" text="After Due Date" fx:id="pFine" />
+                      </columns>
+                    </TableView>
+                  </children>
+                </AnchorPane>
+              </items>
+            </SplitPane>
+          </children>
+        </AnchorPane>
+      </items>
+    </SplitPane>
+  </children>
+</AnchorPane>

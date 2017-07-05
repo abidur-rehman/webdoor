@@ -1,0 +1,3 @@
+
+keytool -genkey -keystore myKeys -alias abid
+jarsigner -keystore myKeys -storepass pakistan WebdoorV1.jar abid 

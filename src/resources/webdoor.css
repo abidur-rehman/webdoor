@@ -1,0 +1,115 @@
+.newButton {
+    -fx-background-color: skyblue;
+    -fx-background-image: url("adduser.png");
+    -fx-background-repeat: no-repeat; 
+}
+
+.newButton:hover {
+    -fx-background-color:#3399FF;
+}
+
+.delButton {
+    -fx-background-color: skyblue;
+    -fx-background-image: url("deleteuser.png");
+    -fx-background-repeat: no-repeat; 
+}
+
+.delButton:hover {
+    -fx-background-color:#3399FF;
+}
+
+.saveButton {
+    -fx-background-color: skyblue;
+    -fx-background-image: url("saveuser.png");
+    -fx-background-repeat: no-repeat; 
+}
+
+.saveButton:hover {
+    -fx-background-color:#3399FF;
+}
+
+.webdoorlogo {
+    -fx-background-color: transparent;
+    -fx-background-image: url("webdoor.png");
+    -fx-background-repeat: no-repeat; 
+    -fx-border-radius: 10 10 0 0;
+    -fx-background-radius: 10 10 0 0;
+}
+/*
+#webdoorlabel {
+   -fx-font-size: 35px;
+   -fx-font-family: "Arial Black";
+  -fx-fill: #818181;
+   -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}*/
+
+
+
+.webdoorButton {
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#61a2b1, #2A5058);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+/* Background of all anchor panes */
+.backgroundColor {
+    -fx-background-image: url("background.jpg");
+}
+
+/* button with this class with hover property */
+.webdoorButton:hover {
+    -fx-background-color: linear-gradient(#2A5058, #61a2b1);
+}
+
+/* Changing color of table view with odd rows to grey*/
+.table-row-cell:odd {
+    -fx-background-color: while;
+}
+
+.table-row-cell:even {
+    -fx-background-color: lightgray;
+}
+
+/* Selected row after selection*/
+.table-view:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: linear-gradient(#2A5058, #61a2b1);
+    -fx-background-insets: 0, 1, 2;
+    -fx-background: -fx-accent;
+    -fx-text-fill: -fx-selection-bar-text;
+}
+
+/* Selected row when table not focused. When the user clicks somewhere else*/ 
+.table-row-cell:filled:focused:selected {
+    -fx-background-color: linear-gradient(#2A5058, #61a2b1);
+    -fx-background-insets: 0, 1, 2;
+    -fx-background: -fx-accent;
+    -fx-text-fill: -fx-selection-bar-text;
+}
+
+/* Row hovered */
+.table-view:row-selection .table-row-cell:filled:hover {
+    -fx-background-color: linear-gradient(#61a2b1, #2A5058);
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-text-fill: -fx-text-inner-color;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+/* Selected row hovered */
+.table-view:focused .table-row-cell:filled:focused:selected:hover {
+    -fx-background: -fx-accent;
+    -fx-background-color: linear-gradient(#61a2b1, #2A5058);
+    -fx-background-insets: 0, 1, 2;
+    -fx-text-fill: -fx-selection-bar-text;
+}
+
+/* Selected row hovered when table not focused */
+.table-view:row-selection .table-row-cell:filled:focused:hover {
+    -fx-background-color: linear-gradient(#2A5058, #61a2b1);
+    -fx-background-insets: 0, 1, 2;
+    -fx-background: -fx-accent;
+    -fx-text-fill: -fx-selection-bar-text;
+}
+
+
